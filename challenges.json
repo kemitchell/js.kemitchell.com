@@ -6,13 +6,13 @@
       "No changes needed to complete the challenge."
     ],
     "code": [
-      "console.log('?')"
+      "console.log('???')"
     ],
     "readOnly": [
       0
     ],
     "target": [
-      "?"
+      "???"
     ]
   },
   {
@@ -22,18 +22,19 @@
       "Hopefully, they see the difference in the output."
     ],
     "code": [
-      "console.log('!')"
+      "console.log('!!!')"
     ],
     "readOnly": [
       0
     ],
     "target": [
-      "!"
+      "!!!"
     ]
   },
   {
     "comments": [
-      "This first time we expect the learner to make changes."
+      "This first time we expect the learner to make changes.",
+      "If they just click the button, as before, they'll see red for the first time."
     ],
     "code": [
       "console.log('X')"
