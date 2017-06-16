@@ -181,6 +181,8 @@ function showDifference (difference) {
       span.className = 'added'
     } else if (item.removed) {
       span.className = 'removed'
+    } else {
+      span.className = 'correct'
     }
     span.appendChild(document.createTextNode(item.value))
     readout.appendChild(span)

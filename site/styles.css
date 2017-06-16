@@ -39,8 +39,24 @@ button {
   background-color: rgb(255, 200, 200);
 }
 
-.removed {
+.correct {
   background-color: rgb(200, 255, 200);
+}
+
+.removed {
+  background-color: white;
+}
+
+.correct:before {
+  content: "✓ ";
+}
+
+.added:before {
+  content: "✗ ";
+}
+
+.removed:before {
+  content: "  ";
 }
 
 .celebration {
