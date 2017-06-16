@@ -50,3 +50,14 @@ button {
 .removed:before {
   content: "- ";
 }
+
+.celebration {
+  color: darkgreen;
+  font-size: 400%;
+  text-align: center;
+}
+
+.nanoModal.nanoModalOverride, .nanoModalOverlay.nanoModalOverride {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}

@@ -57,19 +57,39 @@ function runCode () {
     return item.added || item.removed
   })
   if (success) {
-    setTimeout(
-      function () {
-        celebrate()
-        showChallenge()
-      },
-      250
-    )
+    celebrate()
   }
   consoleBuffer = []
 }
 
+var nanomodal = require('nanomodal')
+
+nanomodal.customShow = function (defaultShow, modalAPI) {
+  defaultShow()
+  modalAPI.overlay.el.style.opacity = 0.5
+  modalAPI.modal.el.style.opacity = 1
+}
+nanomodal.customHide = function (defaultHide, modalAPI) {
+  modalAPI.overlay.el.style.opacity = 0
+  modalAPI.modal.el.style.opacity = 0
+  if (document.body.style.transition !== undefined) {
+    setTimeout(defaultHide, 500)
+  } else {
+    defaultHide()
+  }
+}
+
 function celebrate () {
-  window.alert('\u2714')
+  var modal = nanomodal('\u2714', {
+    buttons: [],
+    classes: ['celebration'],
+    autoRemove: true
+  })
+  modal.show()
+  setTimeout(function () {
+    showChallenge()
+    modal.hide()
+  }, 2000)
 }
 
 function showChallenge (optionalChallengeNumber) {
