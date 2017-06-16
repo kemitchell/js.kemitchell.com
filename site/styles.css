@@ -36,19 +36,11 @@ button {
 }
 
 .added {
-  background-color: rgb(200, 255, 200);
-}
-
-.added:before {
-  content: "+ ";
-}
-
-.removed {
   background-color: rgb(255, 200, 200);
 }
 
-.removed:before {
-  content: "- ";
+.removed {
+  background-color: rgb(200, 255, 200);
 }
 
 .celebration {
