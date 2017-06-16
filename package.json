@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "codemirror": "^5.26.0",
+    "diff": "^3.2.0"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "npm-run-all": "^4.0.2",
+    "watchify": "^3.9.0"
+  },
+  "private": true,
+  "scripts": {
+    "build": "npm-run-all --parallel build:*",
+    "build:editor-style": "mkdir -p site && cp node_modules/codemirror/lib/codemirror.css site/codemirror.css",
+    "build:js": "browserify browser.js > site/bundle.js",
+    "watch": "watchify browser.js -o site/bundle.js"
+  }
+}
