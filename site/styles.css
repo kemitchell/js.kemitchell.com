@@ -27,6 +27,9 @@ button {
 }
 
 #readout span {
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  box-sizing: border-box;
   display: block;
   padding: 0.5rem 0;
   width: 100%;
