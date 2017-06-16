@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+npm run build
+rsync  --archive --compress --force --delete --progress site/ kyle@kemitchell.com:/var/www/js.kemitchell.com/
