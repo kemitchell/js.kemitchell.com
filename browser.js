@@ -47,7 +47,11 @@ function runCode () {
   eval(editor.getValue()) /* eslint no-eval: "off" */
   var target = currentChallenge.target.join('\n')
   var output = consoleBuffer.join('\n')
-  var difference = diff.diffLines(target, output, {newlineIsToken: true})
+  var difference = diff.diffLines(
+    currentChallenge.target.join('\n'),
+    consoleBuffer.join('\n'),
+    {newlineIsToken: true}
+  )
   showDifference(difference)
   var success = !difference.some(function (item) {
     return item.added || item.removed
@@ -89,7 +93,8 @@ function showChallenge (optionalChallengeNumber) {
     editor.setValue(currentChallenge.code.join('\n'))
     showDifference(
       diff.diffLines(
-        currentChallenge.target.join('\n'), '',
+        currentChallenge.target.join('\n'),
+        '',
         {newlineIsToken: true}
       )
     )
