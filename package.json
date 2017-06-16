@@ -17,6 +17,7 @@
     "build:editor-style": "mkdir -p site && cp node_modules/codemirror/lib/codemirror.css site/codemirror.css",
     "build:js": "browserify -o site/bundle.js browser.js",
     "watch": "watchify browser.js -o site/bundle.js",
-    "lint": "standard"
+    "lint": "standard",
+    "test": "node test.js"
   }
 }

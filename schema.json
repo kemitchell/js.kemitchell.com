@@ -1,0 +1,32 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "code": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "target": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "readOnly": {
+        "type": "array",
+        "items": {
+          "type": "number",
+          "min": 0
+        }
+      }
+    },
+    "required": [
+      "code",
+      "target"
+    ],
+    "additionalProperties": false
+  }
+}
