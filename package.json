@@ -14,7 +14,7 @@
   "scripts": {
     "build": "npm-run-all --parallel build:*",
     "build:editor-style": "mkdir -p site && cp node_modules/codemirror/lib/codemirror.css site/codemirror.css",
-    "build:js": "browserify browser.js > site/bundle.js",
+    "build:js": "browserify -o site/bundle.js browser.js",
     "watch": "watchify browser.js -o site/bundle.js",
     "lint": "standard"
   }
