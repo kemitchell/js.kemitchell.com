@@ -9,6 +9,7 @@
     "standard": "^10.0.2",
     "watchify": "^3.9.0"
   },
+  "main": "challenges.js",
   "private": true,
   "scripts": {
     "build": "npm-run-all --parallel build:*",
