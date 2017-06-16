@@ -45,8 +45,6 @@ function loadChallenge () {
 
 function runCode () {
   eval(editor.getValue()) /* eslint no-eval: "off" */
-  var target = currentChallenge.target.join('\n')
-  var output = consoleBuffer.join('\n')
   var difference = diff.diffLines(
     currentChallenge.target.join('\n'),
     consoleBuffer.join('\n'),
