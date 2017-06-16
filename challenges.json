@@ -3,6 +3,9 @@
     "code": [
       "console.log('?')"
     ],
+    "readOnly": [
+      0
+    ],
     "target": [
       "?"
     ]
@@ -10,6 +13,9 @@
   {
     "code": [
       "console.log('!')"
+    ],
+    "readOnly": [
+      0
     ],
     "target": [
       "!"

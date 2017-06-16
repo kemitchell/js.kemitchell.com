@@ -61,3 +61,16 @@ button {
     opacity: 0;
     transition: opacity 0.5s ease;
 }
+
+.readOnly {
+  font-weight: bold;
+}
+
+.locks {
+  width: 1.5rem;
+}
+
+.lock {
+  text-align: center;
+  width: 1.5rem;
+}

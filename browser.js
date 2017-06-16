@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
   var textarea = document.getElementById('editor')
   editor = codemirror.fromTextArea(textarea, {
     lineNumbers: true,
-    mode: 'javascript'
+    mode: 'javascript',
+    gutters: ['locks']
   })
   editor.setOption('extraKeys', {
     'Ctrl-Enter': runCode,
@@ -91,6 +92,8 @@ function celebrate () {
   }, 2000)
 }
 
+var PARENT_LOCK = '\u26bf'
+
 function showChallenge (optionalChallengeNumber) {
   var nextChallengeNumber = (
     optionalChallengeNumber ||
@@ -112,6 +115,36 @@ function showChallenge (optionalChallengeNumber) {
       window.history.pushState({}, '', '#' + (nextIndex + 1))
     }
     editor.setValue(currentChallenge.code.join('\n'))
+    if (currentChallenge.readOnly) {
+      var doc = editor.getDoc()
+      currentChallenge.readOnly.forEach(function (lineNumber) {
+        doc.markText(
+          {
+            line: lineNumber,
+            ch: 0
+          },
+          {
+            line: lineNumber,
+            ch: currentChallenge.code[lineNumber].length + 1
+          },
+          {
+            readOnly: true,
+            inclusiveRight: true,
+            inclusiveLeft: true,
+            className: 'readOnly'
+          }
+        )
+        doc.addLineClass({
+          line: lineNumber,
+          where: 'text',
+          class: 'readOnly'
+        })
+        var marker = document.createElement('div')
+        marker.className = 'lock'
+        marker.appendChild(document.createTextNode(PARENT_LOCK))
+        doc.setGutterMarker(lineNumber, 'locks', marker)
+      })
+    }
     showDifference(
       diff.diffLines(
         currentChallenge.target.join('\n'),
