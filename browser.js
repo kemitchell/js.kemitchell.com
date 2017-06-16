@@ -85,7 +85,9 @@ function showChallenge (optionalChallengeNumber) {
     h2.className = ''
     removeAllChildren(h2)
     h2.appendChild(
-      document.createTextNode('js#' + (nextIndex + 1))
+      document.createTextNode(
+        'js#' + (nextIndex + 1) + '/' + challenges.length
+      )
     )
     if (window.location.hash.substring(1) !== nextChallengeNumber) {
       window.history.pushState({}, '', '#' + (nextIndex + 1))
