@@ -129,16 +129,9 @@ function showChallenge (optionalChallengeNumber) {
           },
           {
             readOnly: true,
-            inclusiveRight: true,
-            inclusiveLeft: true,
-            className: 'readOnly'
+            inclusiveLeft: true
           }
         )
-        doc.addLineClass({
-          line: lineNumber,
-          where: 'text',
-          class: 'readOnly'
-        })
         var marker = document.createElement('div')
         marker.className = 'lock'
         marker.appendChild(document.createTextNode(PARENT_LOCK))
