@@ -58,6 +58,8 @@ function runCode () {
   })
   if (success) {
     celebrate()
+  } else {
+    editor.focus()
   }
   consoleBuffer = []
 }
