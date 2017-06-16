@@ -21,6 +21,12 @@
           "type": "number",
           "min": 0
         }
+      },
+      "comments": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
       }
     },
     "required": [

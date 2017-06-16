@@ -1,5 +1,10 @@
 [
   {
+    "comments": [
+      "Let the leaner get used to the interface.",
+      "Shows the editor, a lock icon, the execute button, and expected output.",
+      "No changes needed to complete the challenge."
+    ],
     "code": [
       "console.log('?')"
     ],
@@ -11,6 +16,11 @@
     ]
   },
   {
+    "comments": [
+      "Again, no changes needed to complete.",
+      "Hopefully, they see the difference in the code.",
+      "Hopefully, they see the difference in the output."
+    ],
     "code": [
       "console.log('!')"
     ],
@@ -22,6 +32,9 @@
     ]
   },
   {
+    "comments": [
+      "This first time we expect the learner to make changes."
+    ],
     "code": [
       "console.log('X')"
     ],
