@@ -44,9 +44,57 @@
     ]
   },
   {
-    "code": [],
+    "code": [
+      "var a = 'X'",
+      "console.log(a)"
+    ],
+    "readOnly": [
+      1
+    ],
     "target": [
-      "B"
+      "Y"
+    ]
+  },
+  {
+    "code": [
+      "var a = 'X'",
+      "a = 'Y'",
+      "console.log(a)"
+    ],
+    "readOnly": [
+      0,
+      2
+    ],
+    "target": [
+      "Z"
+    ]
+  },
+  {
+    "code": [
+      "var a = 'X'",
+      "var b = 'Y'",
+      "console.log(a + b)"
+    ],
+    "readOnly": [
+      0,
+      1
+    ],
+    "target": [
+      "YX"
+    ]
+  },
+  {
+    "code": [
+      "var a = 'X'",
+      "var b = 'Y'",
+      "console.log(a + ' ')"
+    ],
+    "readOnly": [
+      0,
+      1
+    ],
+    "target": [
+      "X Y"
     ]
   }
 ]
