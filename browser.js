@@ -160,7 +160,9 @@ function showDifference (difference) {
       item.value
         .split('\n')
         .map(function (line) {
-          var object = {value: line}
+          var object = {
+            value: line.replace(/ /g, '␣')
+          }
           if (item.added) {
             object.added = true
           } else if (item.removed) {
