@@ -117,9 +117,9 @@ function showChallenge (optionalChallengeNumber) {
       window.history.pushState({}, '', '#' + (nextIndex + 1))
     }
     editor.setValue(currentChallenge.code.join('\n'))
-    if (currentChallenge.readOnly) {
+    if (currentChallenge.lock) {
       var doc = editor.getDoc()
-      currentChallenge.readOnly.forEach(function (lineNumber) {
+      currentChallenge.lock.forEach(function (lineNumber) {
         doc.markText(
           {
             line: lineNumber,

@@ -15,7 +15,7 @@
           "type": "string"
         }
       },
-      "readOnly": {
+      "lock": {
         "type": "array",
         "items": {
           "type": "number",

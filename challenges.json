@@ -8,7 +8,7 @@
     "code": [
       "console.log('???')"
     ],
-    "readOnly": [
+    "lock": [
       0
     ],
     "target": [
@@ -24,7 +24,7 @@
     "code": [
       "console.log('!!!')"
     ],
-    "readOnly": [
+    "lock": [
       0
     ],
     "target": [
@@ -48,7 +48,7 @@
       "var a = 'X'",
       "console.log(a)"
     ],
-    "readOnly": [
+    "lock": [
       1
     ],
     "target": [
@@ -61,7 +61,7 @@
       "a = 'Y'",
       "console.log(a)"
     ],
-    "readOnly": [
+    "lock": [
       0,
       2
     ],
@@ -75,7 +75,7 @@
       "var b = 'Y'",
       "console.log(a + b)"
     ],
-    "readOnly": [
+    "lock": [
       0,
       1
     ],
@@ -89,7 +89,7 @@
       "var b = 'Y'",
       "console.log(a + ' ')"
     ],
-    "readOnly": [
+    "lock": [
       0,
       1
     ],
