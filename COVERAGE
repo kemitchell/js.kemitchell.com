@@ -1,0 +1,58 @@
+Flow Control
+  if
+  else
+  else if
+  while
+  try / catch / throw
+
+Interaction
+  console.log
+  alert
+  prompt
+
+String
+  ''
+  ""
+  "\""
+  '\''
+  "\n"
+  "a" + "b"
+  a === b
+  a !== b
+  string.length
+  string[x]
+  string.slice(x)
+  string.slice(x, y)
+  string.indexOf()
+  string.toUpperCase()
+  string.toLowerCase()
+  string.replace()
+
+Boolean
+  true
+  false
+
+Number
+  1
+  1 + 2
+  1 - 2
+  1 / 2
+  1 * 2
+  parseInt()
+  1 > 2
+  2 < 1
+  1 >= 2
+  3 >= 2
+
+Array
+  []
+  [x]
+  array.length
+  array[x]
+  array.push(x)
+
+Object
+  {}
+  {a: b}
+  {'has space': b}
+  Object.keys()
