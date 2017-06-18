@@ -445,6 +445,7 @@
     ],
     "shows": [
       "var x = y",
+      "1",
       "'string'",
       "if (...) {...}",
       "console.log(...)",
