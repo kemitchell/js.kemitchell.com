@@ -33,7 +33,6 @@ Number
   1 * 2
   1 % 2
   1 > 2
-  2 < 1
   parseInt()
 
 Array
@@ -47,10 +46,14 @@ Array
 
 Object
   {}
-  {a: b}
-  {'has space': b}
+  {'key': value}
+  {'key': value, 'key': value}
   object[x]
   Object.keys()
+
+Composite Structures
+  {'key': [element]}
+  [{'key': value}]
 
 Functions
   function () {}
@@ -65,3 +68,9 @@ Functions
   var x = function () { } ; x()
   fn(function (...) {...})
   function (...) { return function (...) {...} }
+
+  var f = function () {...}; var x = f()
+  var f = function () { return x }; var y = f()
+  var f = function (w) { return x }; var y = f(z)
+  var f = function (u, v) { return w } ; var x = f(y, z)
+

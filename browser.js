@@ -98,7 +98,7 @@ function graduate () {
   window.location = 'diploma.html'
 }
 
-var PARENT_LOCK = '\u26bf'
+var NO_ENTRY = '\u26d4'
 
 function showChallenge (optionalChallengeNumber) {
   var nextChallengeNumber = (
@@ -140,7 +140,7 @@ function showChallenge (optionalChallengeNumber) {
         )
         var marker = document.createElement('div')
         marker.className = 'lock'
-        marker.appendChild(document.createTextNode(PARENT_LOCK))
+        marker.appendChild(document.createTextNode(NO_ENTRY))
         doc.setGutterMarker(lineNumber, 'locks', marker)
       })
     }
