@@ -46,22 +46,31 @@ function loadChallenge () {
 
 function runCode () {
   'use strict'
-  eval(editor.getValue()) /* eslint no-eval: "off" */
-  var difference = diff.diffLines(
-    currentChallenge.target.join('\n'),
-    consoleBuffer.join('\n'),
-    {newlineIsToken: true}
-  )
-  showDifference(difference)
-  var success = !difference.some(function (item) {
-    return item.added || item.removed
-  })
-  if (success) {
-    setTimeout(celebrate, 2000)
-  } else {
-    editor.focus()
+  var exception
+  try {
+    eval(editor.getValue()) /* eslint no-eval: "off" */
+  } catch (error) {
+    exception = error
   }
-  consoleBuffer = []
+  if (exception) {
+    showException(exception)
+  } else {
+    var difference = diff.diffLines(
+      currentChallenge.target.join('\n'),
+      consoleBuffer.join('\n'),
+      {newlineIsToken: true}
+    )
+    showDifference(difference)
+    var success = !difference.some(function (item) {
+      return item.added || item.removed
+    })
+    if (success) {
+      setTimeout(celebrate, 2000)
+    } else {
+      editor.focus()
+    }
+    consoleBuffer = []
+  }
 }
 
 var nanomodal = require('nanomodal')
@@ -188,6 +197,19 @@ function showDifference (difference) {
     span.appendChild(document.createTextNode(item.value))
     readout.appendChild(span)
   })
+}
+
+function showException (exception) {
+  var readout = document.getElementById('readout')
+  removeAllChildren(readout)
+  var span = document.createElement('span')
+  span.className = 'exception'
+  span.appendChild(
+    document.createTextNode(
+      exception.toString()
+    )
+  )
+  readout.appendChild(span)
 }
 
 function removeAllChildren (parent) {

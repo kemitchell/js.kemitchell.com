@@ -61,6 +61,10 @@ button {
   background-color: white;
 }
 
+.exception {
+  background-color: rgb(244, 200, 66);
+}
+
 .correct:before {
   content: "✓ ";
 }
@@ -71,6 +75,10 @@ button {
 
 .removed:before {
   content: "  ";
+}
+
+.exception:before {
+  content: "⚠ ";
 }
 
 .celebration {

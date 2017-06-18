@@ -34,7 +34,7 @@
   {
     "comments": [
       "This first time we expect the learner to make changes.",
-      "If they just click the button, as before, they'll see red for the first time."
+      "If they just click the button, as before, they'll see red output for the first time."
     ],
     "code": [
       "console.log('X')"
