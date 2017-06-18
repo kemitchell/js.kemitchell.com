@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+var fs = require('fs')
+var path = require('path')
+
+fs.writeFile(
+  'challenges.json',
+  JSON.stringify(
+    fs.readdirSync(path.join(__dirname, 'challenges'))
+      .sort()
+      .reduce(function (challenges, file) {
+        console.log(file)
+        return challenges.concat(
+          require(path.join(__dirname, 'challenges', file))
+        )
+      }, []),
+    null, 2
+  ) +
+  '\n'
+)
