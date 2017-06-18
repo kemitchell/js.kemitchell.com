@@ -6,6 +6,13 @@
       "}",
       "f()"
     ],
+    "shows": [
+      "var x = y",
+      "function () {...}",
+      "console.log(...)",
+      "'string'",
+      "x()"
+    ],
     "lock": [
       0,
       2,
@@ -13,6 +20,10 @@
     ],
     "target": [
       "dog"
+    ],
+    "needs": [
+      "console.log(...)",
+      "'string'"
     ]
   }
 ]

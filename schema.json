@@ -27,6 +27,18 @@
         "items": {
           "type": "string"
         }
+      },
+      "needs": {
+        "type": "array",
+        "items": {
+          "$type": "string"
+        }
+      },
+      "shows": {
+        "type": "array",
+        "items": {
+          "$type": "string"
+        }
       }
     },
     "required": [

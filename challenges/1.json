@@ -5,6 +5,10 @@
       "Shows the editor, a lock icon, the execute button, and expected output.",
       "No changes needed to complete the challenge."
     ],
+    "shows": [
+      "console.log(...)",
+      "'string'"
+    ],
     "code": [
       "console.log('???')"
     ],
@@ -24,6 +28,10 @@
     "code": [
       "console.log('!!!')"
     ],
+    "shows": [
+      "console.log(...)",
+      "'string'"
+    ],
     "lock": [
       0
     ],
@@ -39,8 +47,15 @@
     "code": [
       "console.log('cat')"
     ],
+    "shows": [
+      "console.log(...)",
+      "'string'"
+    ],
     "target": [
       "dog"
+    ],
+    "needs": [
+      "'string'"
     ]
   },
   {
@@ -49,6 +64,10 @@
     ],
     "target": [
       "fish"
+    ],
+    "needs": [
+      "console.log(...)",
+      "'string'"
     ]
   },
   {
@@ -56,11 +75,19 @@
       "var animal = 'cat'",
       "console.log(animal)"
     ],
+    "shows": [
+      "var x = y",
+      "console.log(...)",
+      "x"
+    ],
     "lock": [
       1
     ],
     "target": [
       "dog"
+    ],
+    "needs": [
+      "'string'"
     ]
   },
   {
@@ -68,11 +95,18 @@
       "var animal = 'fish'",
       ""
     ],
+    "shows": [
+      "var x = y"
+    ],
     "lock": [
       0
     ],
     "target": [
       "fish"
+    ],
+    "needs": [
+      "console.log()",
+      "x"
     ]
   },
   {
@@ -80,6 +114,12 @@
       "var animal = 'cat'",
       "animal = 'dog'",
       "console.log(animal)"
+    ],
+    "shows": [
+      "var x = y",
+      "x = y",
+      "console.log(...)",
+      "x"
     ],
     "lock": [
       0,
@@ -95,12 +135,21 @@
       "var b = 'dog'",
       "console.log(a + b)"
     ],
+    "shows": [
+      "var x = y",
+      "'string'",
+      "console.log(...)",
+      "string + string"
+    ],
     "lock": [
       0,
       1
     ],
     "target": [
       "dogfish"
+    ],
+    "needs": [
+      "string + string"
     ]
   },
   {
@@ -109,12 +158,21 @@
       "var b = 'dog'",
       "console.log(a + ' ')"
     ],
+    "shows": [
+      "var x = y",
+      "'string'",
+      "console.log(...)",
+      "string + string"
+    ],
     "lock": [
       0,
       1
     ],
     "target": [
       "bird dog"
+    ],
+    "needs": [
+      "string + string"
     ]
   },
   {
@@ -122,11 +180,20 @@
       "var animal = 'cat'",
       "console.log(animal.length)"
     ],
+    "shows": [
+      "var x = y",
+      "'string'",
+      "console.log(...)",
+      "string.length"
+    ],
     "lock": [
       1
     ],
     "target": [
       "4"
+    ],
+    "needs": [
+      "'string'"
     ]
   },
   {
@@ -135,12 +202,22 @@
       "animal = 'dog'",
       "console.log(animal.length)"
     ],
+    "shows": [
+      "var x = y",
+      "'string'",
+      "console.log(...)",
+      "x",
+      "string.length"
+    ],
     "lock": [
       0,
       2
     ],
     "target": [
-      4
+      "4"
+    ],
+    "needs": [
+      "'string'"
     ]
   },
   {
@@ -148,11 +225,20 @@
       "var animal = 'dog'",
       ""
     ],
+    "shows": [
+      "var x = y",
+      "'string'"
+    ],
     "lock": [
       0
     ],
     "target": [
-      3
+      "3"
+    ],
+    "needs": [
+      "console.log(...)",
+      "x",
+      "string.length"
     ]
   },
   {
@@ -160,11 +246,20 @@
       "var animal = 'cat'",
       "console.log(animal[0])"
     ],
+    "shows": [
+      "var x = y",
+      "'string'",
+      "console.log(...)",
+      "string[index]"
+    ],
     "lock": [
       1
     ],
     "target": [
       "d"
+    ],
+    "needs": [
+      "'string'"
     ]
   },
   {
@@ -172,6 +267,13 @@
       "var a = 'dog'",
       "var b = 'fish'",
       "console.log(a === b)"
+    ],
+    "shows": [
+      "var x = y",
+      "'string'",
+      "console.log(...)",
+      "string === string",
+      "false"
     ],
     "lock": [
       0,
@@ -188,6 +290,13 @@
       "var b = 'dog'",
       "console.log(a === b)"
     ],
+    "shows": [
+      "var x = y",
+      "'string'",
+      "console.log(...)",
+      "string === string",
+      "true"
+    ],
     "lock": [
       0,
       1,
@@ -204,6 +313,13 @@
       "b = 'fish'",
       "console.log(a === b)"
     ],
+    "shows": [
+      "var x = y",
+      "'string'",
+      "x = y",
+      "console.log(...)",
+      "string === string"
+    ],
     "lock": [
       0,
       1,
@@ -211,6 +327,10 @@
     ],
     "target": [
       "true"
+    ],
+    "needs": [
+      "x = y",
+      "'string'"
     ]
   },
   {
@@ -223,6 +343,13 @@
       "}",
       "console.log('after')"
     ],
+    "shows": [
+      "var x = y",
+      "'string'",
+      "x = y",
+      "if (...) {...}",
+      "console.log(...)"
+    ],
     "lock": [
       0,
       1,
@@ -233,6 +360,10 @@
     "target": [
       "matched",
       "after"
+    ],
+    "needs": [
+      "x = y",
+      "'string'"
     ]
   },
   {
@@ -245,6 +376,14 @@
       "  console.log('different')",
       "}"
     ],
+    "shows": [
+      "var x = y",
+      "'string'",
+      "x = y",
+      "if (...) {...}",
+      "else {...}",
+      "console.log(...)"
+    ],
     "lock": [
       0,
       2,
@@ -255,6 +394,10 @@
     ],
     "target": [
       "same"
+    ],
+    "needs": [
+      "x = y",
+      "'string'"
     ]
   },
   {
@@ -267,6 +410,13 @@
       "  console.log('different')",
       "}"
     ],
+    "shows": [
+      "var x = y",
+      "'string'",
+      "if (...) {...}",
+      "console.log(...)",
+      "else {...}"
+    ],
     "lock": [
       0,
       2,
@@ -277,6 +427,10 @@
     ],
     "target": [
       "different"
+    ],
+    "needs": [
+      "var x = y",
+      "'string'"
     ]
   },
   {
@@ -289,6 +443,13 @@
       "  console.log('different')",
       "}"
     ],
+    "shows": [
+      "var x = y",
+      "'string'",
+      "if (...) {...}",
+      "console.log(...)",
+      "else {...}"
+    ],
     "lock": [
       0,
       2,
@@ -299,6 +460,10 @@
     ],
     "target": [
       "same"
+    ],
+    "needs": [
+      "var x = y",
+      "'string'"
     ]
   },
   {
@@ -311,6 +476,14 @@
       "} else {",
       "  console.log('?')",
       "}"
+    ],
+    "shows": [
+      "var x = y",
+      "'string'",
+      "if (...) {...}",
+      "console.log(...)",
+      "else {...}",
+      "else if (...) {...}"
     ],
     "lock": [
       1,
