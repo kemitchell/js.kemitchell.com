@@ -1,0 +1,18 @@
+[
+  {
+    "code": [
+      "var f = function () {",
+      "  console.log('cat')",
+      "}",
+      "f()"
+    ],
+    "lock": [
+      0,
+      2,
+      3
+    ],
+    "target": [
+      "dog"
+    ]
+  }
+]

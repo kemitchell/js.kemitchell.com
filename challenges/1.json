@@ -37,42 +37,62 @@
       "If they just click the button, as before, they'll see red output for the first time."
     ],
     "code": [
-      "console.log('X')"
+      "console.log('cat')"
     ],
     "target": [
-      "A"
+      "dog"
     ]
   },
   {
     "code": [
-      "var a = 'X'",
-      "console.log(a)"
+      ""
+    ],
+    "target": [
+      "fish"
+    ]
+  },
+  {
+    "code": [
+      "var animal = 'cat'",
+      "console.log(animal)"
     ],
     "lock": [
       1
     ],
     "target": [
-      "Y"
+      "dog"
     ]
   },
   {
     "code": [
-      "var a = 'X'",
-      "a = 'Y'",
-      "console.log(a)"
+      "var animal = 'fish'",
+      ""
+    ],
+    "lock": [
+      0
+    ],
+    "target": [
+      "fish"
+    ]
+  },
+  {
+    "code": [
+      "var animal = 'cat'",
+      "animal = 'dog'",
+      "console.log(animal)"
     ],
     "lock": [
       0,
       2
     ],
     "target": [
-      "Z"
+      "fish"
     ]
   },
   {
     "code": [
-      "var a = 'X'",
-      "var b = 'Y'",
+      "var a = 'fish'",
+      "var b = 'dog'",
       "console.log(a + b)"
     ],
     "lock": [
@@ -80,13 +100,13 @@
       1
     ],
     "target": [
-      "YX"
+      "dogfish"
     ]
   },
   {
     "code": [
-      "var a = 'X'",
-      "var b = 'Y'",
+      "var a = 'bird'",
+      "var b = 'dog'",
       "console.log(a + ' ')"
     ],
     "lock": [
@@ -94,7 +114,215 @@
       1
     ],
     "target": [
-      "X Y"
+      "bird dog"
+    ]
+  },
+  {
+    "code": [
+      "var animal = 'cat'",
+      "console.log(animal.length)"
+    ],
+    "lock": [
+      1
+    ],
+    "target": [
+      "4"
+    ]
+  },
+  {
+    "code": [
+      "var animal = 'cat'",
+      "animal = 'dog'",
+      "console.log(animal.length)"
+    ],
+    "lock": [
+      0,
+      2
+    ],
+    "target": [
+      4
+    ]
+  },
+  {
+    "code": [
+      "var animal = 'dog'",
+      ""
+    ],
+    "lock": [
+      0
+    ],
+    "target": [
+      3
+    ]
+  },
+  {
+    "code": [
+      "var animal = 'cat'",
+      "console.log(animal[0])"
+    ],
+    "lock": [
+      1
+    ],
+    "target": [
+      "d"
+    ]
+  },
+  {
+    "code": [
+      "var a = 'dog'",
+      "var b = 'fish'",
+      "console.log(a === b)"
+    ],
+    "lock": [
+      0,
+      1,
+      2
+    ],
+    "target": [
+      "false"
+    ]
+  },
+  {
+    "code": [
+      "var a = 'dog'",
+      "var b = 'dog'",
+      "console.log(a === b)"
+    ],
+    "lock": [
+      0,
+      1,
+      2
+    ],
+    "target": [
+      "true"
+    ]
+  },
+  {
+    "code": [
+      "var a = 'dog'",
+      "var b = 'cat'",
+      "b = 'fish'",
+      "console.log(a === b)"
+    ],
+    "lock": [
+      0,
+      1,
+      3
+    ],
+    "target": [
+      "true"
+    ]
+  },
+  {
+    "code": [
+      "var a = 'cat'",
+      "var b = 'dog'",
+      "b = 'fish'",
+      "if (a === b) {",
+      "  console.log('matched')",
+      "}",
+      "console.log('after')"
+    ],
+    "lock": [
+      0,
+      1,
+      3,
+      4,
+      5
+    ],
+    "target": [
+      "matched",
+      "after"
+    ]
+  },
+  {
+    "code": [
+      "var a = 'cat'",
+      "var b = ''",
+      "if (a === b) {",
+      "  console.log('same')",
+      "} else {",
+      "  console.log('different')",
+      "}"
+    ],
+    "lock": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "target": [
+      "same"
+    ]
+  },
+  {
+    "code": [
+      "var a = 'cat'",
+      "var b = 'cat'",
+      "if (a === b) {",
+      "  console.log('same')",
+      "} else {",
+      "  console.log('different')",
+      "}"
+    ],
+    "lock": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "target": [
+      "different"
+    ]
+  },
+  {
+    "code": [
+      "var a = 4",
+      "var b = ''",
+      "if (a === b.length) {",
+      "  console.log('same')",
+      "} else {",
+      "  console.log('different')",
+      "}"
+    ],
+    "lock": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "target": [
+      "same"
+    ]
+  },
+  {
+    "code": [
+      "var animal = 'cat'",
+      "if (animal === 'cat') {",
+      "  console.log('ears')",
+      "} else if (animal === 'dog') {",
+      "  console.log('nose')",
+      "} else {",
+      "  console.log('?')",
+      "}"
+    ],
+    "lock": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "target": [
+      "nose"
     ]
   }
 ]

@@ -1,2 +1,3 @@
-module.exports =
-  require('./1')
+module.exports = []
+  .concat(require('./1'))
+  .concat(require('./2'))
