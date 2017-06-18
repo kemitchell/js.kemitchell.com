@@ -243,6 +243,77 @@
   },
   {
     "code": [
+      "var a = 2",
+      "console.log(a)"
+    ],
+    "shows": [
+      "var x = y",
+      "number",
+      "console.log(...)",
+      "x"
+    ],
+    "lock": [
+      1
+    ],
+    "target": [
+      "4"
+    ],
+    "needs": [
+      "var x = y",
+      "number"
+    ]
+  },
+  {
+    "code": [
+      "var a = 2",
+      "var b = 1",
+      "console.log(a + b)"
+    ],
+    "shows": [
+      "var x = y",
+      "number",
+      "number + number",
+      "console.log(...)",
+      "x"
+    ],
+    "lock": [
+      0,
+      2
+    ],
+    "target": [
+      "4"
+    ],
+    "needs": [
+      "var x = y",
+      "number + number"
+    ]
+  },
+  {
+    "code": [
+      "var a = 4",
+      "var b = 1",
+      "console.log(a - b)"
+    ],
+    "shows": [
+      "var x = y",
+      "number",
+      "number - number",
+      "console.log(...)"
+    ],
+    "lock": [
+      0,
+      2
+    ],
+    "target": [
+      "2"
+    ],
+    "needs": [
+      "var x = y",
+      "number"
+    ]
+  },
+  {
+    "code": [
       "var animal = 'cat'",
       "console.log(animal[0])"
     ],
@@ -260,6 +331,30 @@
     ],
     "needs": [
       "'string'"
+    ]
+  },
+  {
+    "code": [
+      "var animal = 'cat'",
+      "var index = 0",
+      "console.log(animal[index])"
+    ],
+    "shows": [
+      "var x = y",
+      "'string'",
+      "number",
+      "console.log(...)",
+      "string[index]"
+    ],
+    "lock": [
+      0,
+      2
+    ],
+    "target": [
+      "a"
+    ],
+    "needs": [
+      "number"
     ]
   },
   {
@@ -445,7 +540,7 @@
     ],
     "shows": [
       "var x = y",
-      "1",
+      "number",
       "'string'",
       "if (...) {...}",
       "console.log(...)",
