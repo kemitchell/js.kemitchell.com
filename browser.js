@@ -94,6 +94,10 @@ function celebrate () {
   }, 2000)
 }
 
+function graduate () {
+  window.location = 'diploma.html'
+}
+
 var PARENT_LOCK = '\u26bf'
 
 function showChallenge (optionalChallengeNumber) {
@@ -148,7 +152,7 @@ function showChallenge (optionalChallengeNumber) {
       )
     )
   } else {
-    // TODO: Celebrate completion!
+    graduate()
   }
 }
 

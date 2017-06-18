@@ -92,3 +92,19 @@ button {
   text-align: center;
   width: 1.5rem;
 }
+
+.hidden {
+  display: none;
+}
+
+#diploma {
+  background: white;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+#stars {
+  display: block;
+  font-size: 400%;
+  text-align: center;
+}
