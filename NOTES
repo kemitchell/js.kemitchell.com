@@ -10,3 +10,5 @@ Minimize the number of concepts introduced at once.
 Show challengs that use language concepts in provided code at least
 twice before expecting learners to produce code using the concept
 themselves.
+
+Use JavaScript Standard Style in all examples.
