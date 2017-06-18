@@ -6,8 +6,8 @@
       "No changes needed to complete the challenge."
     ],
     "shows": [
-      "console.log(...)",
-      "'string'"
+      "console.log(…)",
+      "'…'"
     ],
     "code": [
       "console.log('???')"
@@ -29,8 +29,8 @@
       "console.log('!!!')"
     ],
     "shows": [
-      "console.log(...)",
-      "'string'"
+      "console.log(…)",
+      "'…'"
     ],
     "lock": [
       0
@@ -48,14 +48,14 @@
       "console.log('cat')"
     ],
     "shows": [
-      "console.log(...)",
-      "'string'"
+      "console.log(…)",
+      "'…'"
     ],
     "target": [
       "dog"
     ],
     "needs": [
-      "'string'"
+      "'…'"
     ]
   },
   {
@@ -66,8 +66,8 @@
       "fish"
     ],
     "needs": [
-      "console.log(...)",
-      "'string'"
+      "console.log(…)",
+      "'…'"
     ]
   },
   {
@@ -77,7 +77,7 @@
     ],
     "shows": [
       "var x = y",
-      "console.log(...)",
+      "console.log(…)",
       "x"
     ],
     "lock": [
@@ -87,7 +87,7 @@
       "dog"
     ],
     "needs": [
-      "'string'"
+      "'…'"
     ]
   },
   {
@@ -118,7 +118,7 @@
     "shows": [
       "var x = y",
       "x = y",
-      "console.log(...)",
+      "console.log(…)",
       "x"
     ],
     "lock": [
@@ -137,9 +137,9 @@
     ],
     "shows": [
       "var x = y",
-      "'string'",
-      "console.log(...)",
-      "string + string"
+      "'…'",
+      "console.log(…)",
+      "'…' + '…'"
     ],
     "lock": [
       0,
@@ -149,7 +149,7 @@
       "dogfish"
     ],
     "needs": [
-      "string + string"
+      "'…' + '…'"
     ]
   },
   {
@@ -160,9 +160,9 @@
     ],
     "shows": [
       "var x = y",
-      "'string'",
-      "console.log(...)",
-      "string + string"
+      "'…'",
+      "console.log(…)",
+      "'…' + '…'"
     ],
     "lock": [
       0,
@@ -172,7 +172,7 @@
       "bird dog"
     ],
     "needs": [
-      "string + string"
+      "'…' + '…'"
     ]
   },
   {
@@ -182,8 +182,8 @@
     ],
     "shows": [
       "var x = y",
-      "'string'",
-      "console.log(...)",
+      "'…'",
+      "console.log(…)",
       "string.length"
     ],
     "lock": [
@@ -193,7 +193,7 @@
       "4"
     ],
     "needs": [
-      "'string'"
+      "'…'"
     ]
   },
   {
@@ -204,8 +204,8 @@
     ],
     "shows": [
       "var x = y",
-      "'string'",
-      "console.log(...)",
+      "'…'",
+      "console.log(…)",
       "x",
       "string.length"
     ],
@@ -217,7 +217,7 @@
       "4"
     ],
     "needs": [
-      "'string'"
+      "'…'"
     ]
   },
   {
@@ -227,7 +227,7 @@
     ],
     "shows": [
       "var x = y",
-      "'string'"
+      "'…'"
     ],
     "lock": [
       0
@@ -236,7 +236,7 @@
       "3"
     ],
     "needs": [
-      "console.log(...)",
+      "console.log(…)",
       "x",
       "string.length"
     ]
@@ -248,8 +248,8 @@
     ],
     "shows": [
       "var x = y",
-      "number",
-      "console.log(...)",
+      "1",
+      "console.log(…)",
       "x"
     ],
     "lock": [
@@ -260,7 +260,7 @@
     ],
     "needs": [
       "var x = y",
-      "number"
+      "1"
     ]
   },
   {
@@ -271,9 +271,9 @@
     ],
     "shows": [
       "var x = y",
-      "number",
-      "number + number",
-      "console.log(...)",
+      "1",
+      "1 + 1",
+      "console.log(…)",
       "x"
     ],
     "lock": [
@@ -285,7 +285,7 @@
     ],
     "needs": [
       "var x = y",
-      "number + number"
+      "1 + 1"
     ]
   },
   {
@@ -296,9 +296,9 @@
     ],
     "shows": [
       "var x = y",
-      "number",
-      "number - number",
-      "console.log(...)"
+      "1",
+      "1 - 1",
+      "console.log(…)"
     ],
     "lock": [
       0,
@@ -309,7 +309,7 @@
     ],
     "needs": [
       "var x = y",
-      "number"
+      "1"
     ]
   },
   {
@@ -319,8 +319,8 @@
     ],
     "shows": [
       "var x = y",
-      "'string'",
-      "console.log(...)",
+      "'…'",
+      "console.log(…)",
       "string[index]"
     ],
     "lock": [
@@ -330,7 +330,7 @@
       "d"
     ],
     "needs": [
-      "'string'"
+      "'…'"
     ]
   },
   {
@@ -341,9 +341,9 @@
     ],
     "shows": [
       "var x = y",
-      "'string'",
-      "number",
-      "console.log(...)",
+      "'…'",
+      "1",
+      "console.log(…)",
       "string[index]"
     ],
     "lock": [
@@ -354,7 +354,7 @@
       "a"
     ],
     "needs": [
-      "number"
+      "1"
     ]
   },
   {
@@ -365,8 +365,8 @@
     ],
     "shows": [
       "var x = y",
-      "'string'",
-      "console.log(...)",
+      "'…'",
+      "console.log(…)",
       "string === string",
       "false"
     ],
@@ -387,8 +387,8 @@
     ],
     "shows": [
       "var x = y",
-      "'string'",
-      "console.log(...)",
+      "'…'",
+      "console.log(…)",
       "string === string",
       "true"
     ],
@@ -410,9 +410,9 @@
     ],
     "shows": [
       "var x = y",
-      "'string'",
+      "'…'",
       "x = y",
-      "console.log(...)",
+      "console.log(…)",
       "string === string"
     ],
     "lock": [
@@ -425,7 +425,7 @@
     ],
     "needs": [
       "x = y",
-      "'string'"
+      "'…'"
     ]
   },
   {
@@ -440,10 +440,10 @@
     ],
     "shows": [
       "var x = y",
-      "'string'",
+      "'…'",
       "x = y",
-      "if (...) {...}",
-      "console.log(...)"
+      "if (…) {…}",
+      "console.log(…)"
     ],
     "lock": [
       0,
@@ -458,7 +458,7 @@
     ],
     "needs": [
       "x = y",
-      "'string'"
+      "'…'"
     ]
   },
   {
@@ -473,11 +473,11 @@
     ],
     "shows": [
       "var x = y",
-      "'string'",
+      "'…'",
       "x = y",
-      "if (...) {...}",
-      "else {...}",
-      "console.log(...)"
+      "if (…) {…}",
+      "else {…}",
+      "console.log(…)"
     ],
     "lock": [
       0,
@@ -492,7 +492,7 @@
     ],
     "needs": [
       "x = y",
-      "'string'"
+      "'…'"
     ]
   },
   {
@@ -507,10 +507,10 @@
     ],
     "shows": [
       "var x = y",
-      "'string'",
-      "if (...) {...}",
-      "console.log(...)",
-      "else {...}"
+      "'…'",
+      "if (…) {…}",
+      "console.log(…)",
+      "else {…}"
     ],
     "lock": [
       0,
@@ -525,7 +525,7 @@
     ],
     "needs": [
       "var x = y",
-      "'string'"
+      "'…'"
     ]
   },
   {
@@ -540,11 +540,11 @@
     ],
     "shows": [
       "var x = y",
-      "number",
-      "'string'",
-      "if (...) {...}",
-      "console.log(...)",
-      "else {...}"
+      "1",
+      "'…'",
+      "if (…) {…}",
+      "console.log(…)",
+      "else {…}"
     ],
     "lock": [
       0,
@@ -559,7 +559,7 @@
     ],
     "needs": [
       "var x = y",
-      "'string'"
+      "'…'"
     ]
   },
   {
@@ -575,11 +575,11 @@
     ],
     "shows": [
       "var x = y",
-      "'string'",
-      "if (...) {...}",
-      "console.log(...)",
-      "else {...}",
-      "else if (...) {...}"
+      "'…'",
+      "if (…) {…}",
+      "console.log(…)",
+      "else {…}",
+      "else if (…) {…}"
     ],
     "lock": [
       1,

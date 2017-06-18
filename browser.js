@@ -13,6 +13,7 @@ window.console = {
 
 var challenges = require('./challenges')
 var currentChallenge
+var unsuccessfulRuns
 
 var editor
 
@@ -67,6 +68,10 @@ function runCode () {
     if (success) {
       setTimeout(celebrate, 1000)
     } else {
+      unsuccessfulRuns++
+      if (unsuccessfulRuns >= 3) {
+        showHints()
+      }
       editor.focus()
     }
     consoleBuffer = []
@@ -118,6 +123,7 @@ function showChallenge (optionalChallengeNumber) {
   var nextChallenge = challenges[nextIndex]
   if (nextChallenge) {
     currentChallenge = nextChallenge
+    unsuccessfulRuns = 0
     var h2 = document.getElementById('challenge')
     h2.className = ''
     removeAllChildren(h2)
@@ -126,6 +132,7 @@ function showChallenge (optionalChallengeNumber) {
         'js#' + (nextIndex + 1) + '/' + challenges.length
       )
     )
+    removeAllChildren(document.getElementById('hints'))
     if (window.location.hash.substring(1) !== nextChallengeNumber) {
       window.history.pushState({}, '', '#' + (nextIndex + 1))
     }
@@ -210,6 +217,18 @@ function showException (exception) {
     )
   )
   readout.appendChild(span)
+}
+
+function showHints () {
+  var hints = document.getElementById('hints')
+  removeAllChildren(hints)
+  currentChallenge.needs.forEach(function (concept) {
+    var li = document.createElement('li')
+    var code = document.createElement('code')
+    code.appendChild(document.createTextNode(concept))
+    li.appendChild(code)
+    hints.appendChild(li)
+  })
 }
 
 function removeAllChildren (parent) {

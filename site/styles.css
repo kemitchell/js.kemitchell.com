@@ -117,3 +117,17 @@ button {
   font-size: 400%;
   text-align: center;
 }
+
+#hints {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#hints li:last-child {
+  margin-bottom: 1rem;
+}
+
+#hints li:before {
+  content: '❔  ';
+}

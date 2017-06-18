@@ -8,9 +8,9 @@
     ],
     "shows": [
       "var x = y",
-      "function () {...}",
-      "console.log(...)",
-      "'string'",
+      "function () {…}",
+      "console.log(…)",
+      "'…'",
       "x()"
     ],
     "lock": [
@@ -22,8 +22,8 @@
       "dog"
     ],
     "needs": [
-      "console.log(...)",
-      "'string'"
+      "console.log(…)",
+      "'…'"
     ]
   }
 ]
