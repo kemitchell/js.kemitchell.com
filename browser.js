@@ -57,7 +57,7 @@ function runCode () {
     return item.added || item.removed
   })
   if (success) {
-    celebrate()
+    setTimeout(celebrate, 2000)
   } else {
     editor.focus()
   }
