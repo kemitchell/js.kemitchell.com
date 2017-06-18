@@ -14,7 +14,6 @@
   "private": true,
   "scripts": {
     "build": "npm-run-all --parallel build:*",
-    "build:challenges": "./build-challenges",
     "build:editor-style": "mkdir -p site && cp node_modules/codemirror/lib/codemirror.css site/codemirror.css",
     "build:js": "browserify -o site/bundle.js browser.js",
     "watch": "watchify browser.js -o site/bundle.js",
