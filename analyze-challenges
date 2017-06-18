@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+var challenges = require('./challenges')
+
+var seen = []
+challenges.forEach(function (challenge, index) {
+  var number = index + 1
+  console.log('Challenge #' + number)
+  if (challenge.lock && challenge.code.length === challenge.lock.length) {
+    console.log('  All lines locked')
+  }
+  if (challenge.shows) {
+    challenge.shows.forEach(function (topic) {
+      if (!seen.includes(topic)) {
+        seen.push(topic)
+        console.log('  Introduces: ' + topic)
+      }
+    })
+  }
+})
