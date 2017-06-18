@@ -65,7 +65,7 @@ function runCode () {
       return item.added || item.removed
     })
     if (success) {
-      setTimeout(celebrate, 2000)
+      setTimeout(celebrate, 1000)
     } else {
       editor.focus()
     }
