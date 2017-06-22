@@ -72,7 +72,6 @@ function runCode () {
       if (unsuccessfulRuns >= 3) {
         showHints()
       }
-      editor.focus()
     }
     consoleBuffer = []
   }
