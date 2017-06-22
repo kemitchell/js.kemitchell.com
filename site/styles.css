@@ -33,14 +33,14 @@ button {
   width: 100%;
 }
 
-#readout {
+#output {
   background-color: white;
   display: block;
   font-family: monospace;
   padding: 0;
 }
 
-#readout span {
+#output span {
   border-left: 0.5rem solid transparent;
   border-right: 0.5rem solid transparent;
   box-sizing: border-box;

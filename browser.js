@@ -172,8 +172,8 @@ function showChallenge (optionalChallengeNumber) {
 }
 
 function showDifference (difference) {
-  var readout = document.getElementById('readout')
-  removeAllChildren(readout)
+  var output = document.getElementById('output')
+  removeAllChildren(output)
   var lineDifference = difference.reduce(function (lines, item) {
     return lines.concat(
       item.value
@@ -201,13 +201,13 @@ function showDifference (difference) {
       span.className = 'correct'
     }
     span.appendChild(document.createTextNode(item.value))
-    readout.appendChild(span)
+    output.appendChild(span)
   })
 }
 
 function showException (exception) {
-  var readout = document.getElementById('readout')
-  removeAllChildren(readout)
+  var output = document.getElementById('output')
+  removeAllChildren(output)
   var span = document.createElement('span')
   span.className = 'exception'
   span.appendChild(
@@ -215,7 +215,7 @@ function showException (exception) {
       exception.toString()
     )
   )
-  readout.appendChild(span)
+  output.appendChild(span)
 }
 
 function showHints () {
