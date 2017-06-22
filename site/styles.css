@@ -74,7 +74,7 @@ button {
 }
 
 .removed:before {
-  content: "  ";
+  content: "◎ ";
 }
 
 .exception:before {
