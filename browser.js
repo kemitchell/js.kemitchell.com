@@ -70,6 +70,7 @@ function runCode () {
       currentChallenge.target.join('\n'),
       consoleBuffer.join('\n')
     )
+    consoleBuffer = []
     showDifference(difference)
     var success = !difference.some(function (item) {
       return item.added || item.removed
@@ -82,7 +83,6 @@ function runCode () {
         showHints()
       }
     }
-    consoleBuffer = []
   }
 }
 
@@ -176,6 +176,7 @@ function showChallenge (optionalChallengeNumber) {
         }
       })
     )
+    consoleBuffer = []
   } else {
     graduate()
   }
