@@ -65,12 +65,14 @@ function runCode () {
   }
   if (exception) {
     showException(exception)
+    showTargetOutput()
   } else {
     var difference = diff.diffLines(
       currentChallenge.target.join('\n'),
       consoleBuffer.join('\n')
     )
     consoleBuffer = []
+    clearException()
     showDifference(difference)
     var success = !difference.some(function (item) {
       return item.added || item.removed
@@ -168,14 +170,8 @@ function showChallenge (optionalChallengeNumber) {
         doc.setGutterMarker(lineNumber, 'locks', marker)
       })
     }
-    showDifference(
-      currentChallenge.target.map(function (target) {
-        return {
-          value: target,
-          removed: true
-        }
-      })
-    )
+    clearException()
+    showTargetOutput()
     consoleBuffer = []
   } else {
     graduate()
@@ -217,17 +213,34 @@ function showDifference (difference) {
   })
 }
 
-function showException (exception) {
-  var output = document.getElementById('output')
-  removeAllChildren(output)
+function showTargetOutput () {
+  showDifference(
+    currentChallenge.target.map(function (target) {
+      return {
+        value: target,
+        removed: true
+      }
+    })
+  )
+}
+
+function showException (error) {
+  var exception = document.getElementById('exception')
+  removeAllChildren(exception)
   var span = document.createElement('span')
-  span.className = 'exception'
   span.appendChild(
     document.createTextNode(
-      exception.toString()
+      error.toString()
     )
   )
-  output.appendChild(span)
+  exception.appendChild(span)
+  exception.className = ''
+}
+
+function clearException () {
+  var exception = document.getElementById('exception')
+  exception.className = 'hidden'
+  removeAllChildren(exception)
 }
 
 function showHints () {
