@@ -1,18 +1,44 @@
 #!/usr/bin/env node
 var challenges = require('./challenges')
 
-var seen = []
+var shown = {}
+var needed = {}
 challenges.forEach(function (challenge, index) {
   var number = index + 1
-  console.log('Challenge #' + number)
+  console.log(
+    'Challenge #' + number +
+    (
+      challenge.codenames
+        ? (' (' + challenge.codenames.join(', ') + ')')
+        : ''
+    )
+  )
   if (challenge.lock && challenge.code.length === challenge.lock.length) {
     console.log('  All lines locked')
   }
   if (challenge.shows) {
     challenge.shows.forEach(function (topic) {
-      if (!seen.includes(topic)) {
-        seen.push(topic)
+      if (!shown.hasOwnProperty(topic)) {
+        shown[topic] = 1
         console.log('  Introduces: ' + topic)
+      } else {
+        shown[topic] = shown[topic] + 1
+      }
+    })
+  }
+  if (challenge.needs) {
+    challenge.needs.forEach(function (topic) {
+      if (!needed.hasOwnProperty(topic)) {
+        needed[topic] = 1
+        console.log(
+          '  First Use: ' +
+          topic +
+          ' (shown ' +
+          (shown[topic] || 0) +
+          ' times)'
+        )
+      } else {
+        needed[topic] = needed[topic] + 1
       }
     })
   }
