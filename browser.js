@@ -41,7 +41,17 @@ function loadChallenge () {
   if (/^\d+$/.test(hash) && parsed > 0) {
     showChallenge(parsed)
   } else {
-    showChallenge()
+    var withCodename = challenges.find(function (challenge) {
+      return (
+        Array.isArray(challenge.codenames) &&
+        challenge.codenames.indexOf(hash) !== -1
+      )
+    })
+    if (withCodename) {
+      showChallenge(challenges.indexOf(withCodename) + 1)
+    } else {
+      showChallenge()
+    }
   }
 }
 

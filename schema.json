@@ -3,6 +3,12 @@
   "items": {
     "type": "object",
     "properties": {
+      "codenames": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
       "code": {
         "type": "array",
         "items": {
