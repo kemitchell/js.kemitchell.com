@@ -33,20 +33,28 @@ button {
   width: 100%;
 }
 
-#output {
+#exception, #output {
   background-color: inherit;
   display: block;
   font-family: monospace;
   padding: 0;
 }
 
-#output span {
+#exception, #output span {
   border-left: 0.5rem solid transparent;
   border-right: 0.5rem solid transparent;
   box-sizing: border-box;
   display: block;
   padding: 0.5rem 0;
   width: 100%;
+}
+
+#exception {
+  background-color: rgb(244, 200, 66);
+}
+
+.exception span:before {
+  content: "⚠ ";
 }
 
 .added {
@@ -61,10 +69,6 @@ button {
   background-color: inherit;
 }
 
-.exception {
-  background-color: rgb(244, 200, 66);
-}
-
 .correct:before {
   content: "✓ ";
 }
@@ -75,10 +79,6 @@ button {
 
 .removed:before {
   content: "◎ ";
-}
-
-.exception:before {
-  content: "⚠ ";
 }
 
 .celebration {
@@ -103,7 +103,7 @@ button {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 #diploma {
@@ -130,4 +130,8 @@ button {
 
 #hints li:before {
   content: '❔  ';
+}
+
+#hints li {
+  background-color: rgb(200, 200, 255);
 }
