@@ -1,0 +1,70 @@
+[
+  {
+    "codenames": [
+      "print-string-variable"
+    ],
+    "code": [
+      "var animal = 'cat'",
+      "console.log(animal)"
+    ],
+    "lock": [
+      1
+    ],
+    "shows": [
+      "var x = y",
+      "console.log(…)",
+      "x"
+    ],
+    "target": [
+      "dog"
+    ],
+    "needs": [
+      "'…'"
+    ]
+  },
+  {
+    "codenames": [
+      "use-console-log"
+    ],
+    "code": [
+      "var animal = 'fish'",
+      ""
+    ],
+    "shows": [
+      "var x = y"
+    ],
+    "lock": [
+      0
+    ],
+    "target": [
+      "fish"
+    ],
+    "needs": [
+      "console.log()",
+      "x"
+    ]
+  },
+  {
+    "codenames": [
+      "print-changed-variable"
+    ],
+    "code": [
+      "var animal = 'cat'",
+      "animal = 'dog'",
+      "console.log(animal)"
+    ],
+    "lock": [
+      0,
+      2
+    ],
+    "shows": [
+      "var x = y",
+      "x = y",
+      "console.log(…)",
+      "x"
+    ],
+    "target": [
+      "fish"
+    ]
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "codenames": [
+      "exclamation-marks"
+    ],
+    "comments": [
+      "Let the leaner get used to the interface.",
+      "Shows the editor, a lock icon, the execute button, and expected output.",
+      "No changes needed to complete the challenge."
+    ],
+    "shows": [
+      "console.log(…)",
+      "'…'"
+    ],
+    "code": [
+      "console.log('???')"
+    ],
+    "lock": [
+      0
+    ],
+    "target": [
+      "???"
+    ]
+  },
+  {
+    "codenames": [
+      "question-marks"
+    ],
+    "comments": [
+      "Again, no changes needed to complete.",
+      "Hopefully, they see the difference in the code.",
+      "Hopefully, they see the difference in the output."
+    ],
+    "code": [
+      "console.log('!!!')"
+    ],
+    "shows": [
+      "console.log(…)",
+      "'…'"
+    ],
+    "lock": [
+      0
+    ],
+    "target": [
+      "!!!"
+    ]
+  },
+  {
+    "comments": [
+      "This first time we expect the learner to make changes.",
+      "If they just click the button, as before, they'll see red output for the first time."
+    ],
+    "code": [
+      "console.log('cat')"
+    ],
+    "shows": [
+      "console.log(…)",
+      "'…'"
+    ],
+    "target": [
+      "dog"
+    ],
+    "needs": [
+      "'…'"
+    ]
+  },
+  {
+    "code": [
+      ""
+    ],
+    "target": [
+      "fish"
+    ],
+    "needs": [
+      "console.log(…)",
+      "'…'"
+    ]
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "codenames": [
+      "dog-plus-fish"
+    ],
+    "code": [
+      "var a = 'fish'",
+      "var b = 'dog'",
+      "console.log(a + b)"
+    ],
+    "lock": [
+      0,
+      1
+    ],
+    "shows": [
+      "var x = y",
+      "'…'",
+      "console.log(…)",
+      "'…' + '…'"
+    ],
+    "target": [
+      "dogfish"
+    ],
+    "needs": [
+      "'…' + '…'"
+    ]
+  },
+  {
+    "codenames": [
+      "bird-space-dog"
+    ],
+    "code": [
+      "var a = 'bird'",
+      "var b = 'dog'",
+      "console.log(a + ' ')"
+    ],
+    "lock": [
+      0,
+      1
+    ],
+    "shows": [
+      "var x = y",
+      "'…'",
+      "console.log(…)",
+      "'…' + '…'"
+    ],
+    "target": [
+      "bird dog"
+    ],
+    "needs": [
+      "'…' + '…'"
+    ]
+  },
+  {
+    "codenames": [
+      "first-length"
+    ],
+    "code": [
+      "var animal = 'cat'",
+      "console.log(animal.length)"
+    ],
+    "lock": [
+      1
+    ],
+    "shows": [
+      "var x = y",
+      "'…'",
+      "console.log(…)",
+      "string.length"
+    ],
+    "target": [
+      "4"
+    ],
+    "needs": [
+      "'…'"
+    ]
+  },
+  {
+    "code": [
+      "var animal = 'cat'",
+      "animal = 'dog'",
+      "console.log(animal.length)"
+    ],
+    "lock": [
+      0,
+      2
+    ],
+    "shows": [
+      "var x = y",
+      "'…'",
+      "console.log(…)",
+      "x",
+      "string.length"
+    ],
+    "target": [
+      "4"
+    ],
+    "needs": [
+      "'…'"
+    ]
+  },
+  {
+    "code": [
+      "var animal = 'dog'",
+      ""
+    ],
+    "lock": [
+      0
+    ],
+    "shows": [
+      "var x = y",
+      "'…'"
+    ],
+    "target": [
+      "3"
+    ],
+    "needs": [
+      "console.log(…)",
+      "x",
+      "string.length"
+    ]
+  }
+]

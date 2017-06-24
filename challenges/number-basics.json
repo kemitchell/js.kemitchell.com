@@ -1,259 +1,17 @@
 [
   {
-    "comments": [
-      "Let the leaner get used to the interface.",
-      "Shows the editor, a lock icon, the execute button, and expected output.",
-      "No changes needed to complete the challenge."
-    ],
-    "shows": [
-      "console.log(…)",
-      "'…'"
-    ],
-    "code": [
-      "console.log('???')"
-    ],
-    "lock": [
-      0
-    ],
-    "target": [
-      "???"
-    ]
-  },
-  {
-    "comments": [
-      "Again, no changes needed to complete.",
-      "Hopefully, they see the difference in the code.",
-      "Hopefully, they see the difference in the output."
-    ],
-    "code": [
-      "console.log('!!!')"
-    ],
-    "shows": [
-      "console.log(…)",
-      "'…'"
-    ],
-    "lock": [
-      0
-    ],
-    "target": [
-      "!!!"
-    ]
-  },
-  {
-    "comments": [
-      "This first time we expect the learner to make changes.",
-      "If they just click the button, as before, they'll see red output for the first time."
-    ],
-    "code": [
-      "console.log('cat')"
-    ],
-    "shows": [
-      "console.log(…)",
-      "'…'"
-    ],
-    "target": [
-      "dog"
-    ],
-    "needs": [
-      "'…'"
-    ]
-  },
-  {
-    "code": [
-      ""
-    ],
-    "target": [
-      "fish"
-    ],
-    "needs": [
-      "console.log(…)",
-      "'…'"
-    ]
-  },
-  {
-    "code": [
-      "var animal = 'cat'",
-      "console.log(animal)"
-    ],
-    "shows": [
-      "var x = y",
-      "console.log(…)",
-      "x"
-    ],
-    "lock": [
-      1
-    ],
-    "target": [
-      "dog"
-    ],
-    "needs": [
-      "'…'"
-    ]
-  },
-  {
-    "code": [
-      "var animal = 'fish'",
-      ""
-    ],
-    "shows": [
-      "var x = y"
-    ],
-    "lock": [
-      0
-    ],
-    "target": [
-      "fish"
-    ],
-    "needs": [
-      "console.log()",
-      "x"
-    ]
-  },
-  {
-    "code": [
-      "var animal = 'cat'",
-      "animal = 'dog'",
-      "console.log(animal)"
-    ],
-    "shows": [
-      "var x = y",
-      "x = y",
-      "console.log(…)",
-      "x"
-    ],
-    "lock": [
-      0,
-      2
-    ],
-    "target": [
-      "fish"
-    ]
-  },
-  {
-    "code": [
-      "var a = 'fish'",
-      "var b = 'dog'",
-      "console.log(a + b)"
-    ],
-    "shows": [
-      "var x = y",
-      "'…'",
-      "console.log(…)",
-      "'…' + '…'"
-    ],
-    "lock": [
-      0,
-      1
-    ],
-    "target": [
-      "dogfish"
-    ],
-    "needs": [
-      "'…' + '…'"
-    ]
-  },
-  {
-    "code": [
-      "var a = 'bird'",
-      "var b = 'dog'",
-      "console.log(a + ' ')"
-    ],
-    "shows": [
-      "var x = y",
-      "'…'",
-      "console.log(…)",
-      "'…' + '…'"
-    ],
-    "lock": [
-      0,
-      1
-    ],
-    "target": [
-      "bird dog"
-    ],
-    "needs": [
-      "'…' + '…'"
-    ]
-  },
-  {
-    "code": [
-      "var animal = 'cat'",
-      "console.log(animal.length)"
-    ],
-    "shows": [
-      "var x = y",
-      "'…'",
-      "console.log(…)",
-      "string.length"
-    ],
-    "lock": [
-      1
-    ],
-    "target": [
-      "4"
-    ],
-    "needs": [
-      "'…'"
-    ]
-  },
-  {
-    "code": [
-      "var animal = 'cat'",
-      "animal = 'dog'",
-      "console.log(animal.length)"
-    ],
-    "shows": [
-      "var x = y",
-      "'…'",
-      "console.log(…)",
-      "x",
-      "string.length"
-    ],
-    "lock": [
-      0,
-      2
-    ],
-    "target": [
-      "4"
-    ],
-    "needs": [
-      "'…'"
-    ]
-  },
-  {
-    "code": [
-      "var animal = 'dog'",
-      ""
-    ],
-    "shows": [
-      "var x = y",
-      "'…'"
-    ],
-    "lock": [
-      0
-    ],
-    "target": [
-      "3"
-    ],
-    "needs": [
-      "console.log(…)",
-      "x",
-      "string.length"
-    ]
-  },
-  {
     "code": [
       "var a = 2",
       "console.log(a)"
+    ],
+    "lock": [
+      1
     ],
     "shows": [
       "var x = y",
       "1",
       "console.log(…)",
       "x"
-    ],
-    "lock": [
-      1
     ],
     "target": [
       "4"
@@ -269,16 +27,16 @@
       "var b = 1",
       "console.log(a + b)"
     ],
+    "lock": [
+      0,
+      2
+    ],
     "shows": [
       "var x = y",
       "1",
       "1 + 1",
       "console.log(…)",
       "x"
-    ],
-    "lock": [
-      0,
-      2
     ],
     "target": [
       "4"
@@ -294,15 +52,15 @@
       "var b = 1",
       "console.log(a - b)"
     ],
+    "lock": [
+      0,
+      2
+    ],
     "shows": [
       "var x = y",
       "1",
       "1 - 1",
       "console.log(…)"
-    ],
-    "lock": [
-      0,
-      2
     ],
     "target": [
       "2"
@@ -317,14 +75,14 @@
       "var animal = 'cat'",
       "console.log(animal[0])"
     ],
+    "lock": [
+      1
+    ],
     "shows": [
       "var x = y",
       "'…'",
       "console.log(…)",
       "string[index]"
-    ],
-    "lock": [
-      1
     ],
     "target": [
       "d"
@@ -339,16 +97,16 @@
       "var index = 0",
       "console.log(animal[index])"
     ],
+    "lock": [
+      0,
+      2
+    ],
     "shows": [
       "var x = y",
       "'…'",
       "1",
       "console.log(…)",
       "string[index]"
-    ],
-    "lock": [
-      0,
-      2
     ],
     "target": [
       "a"
@@ -363,17 +121,17 @@
       "var b = 'fish'",
       "console.log(a === b)"
     ],
+    "lock": [
+      0,
+      1,
+      2
+    ],
     "shows": [
       "var x = y",
       "'…'",
       "console.log(…)",
       "string === string",
       "false"
-    ],
-    "lock": [
-      0,
-      1,
-      2
     ],
     "target": [
       "false"

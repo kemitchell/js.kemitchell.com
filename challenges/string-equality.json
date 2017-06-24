@@ -1,0 +1,182 @@
+[
+  {
+    "codenames": [
+      "first-equality"
+    ],
+    "code": [
+      "var a = 'cat'",
+      "var b = 'cat'",
+      "var c = 'cats'",
+      "console.log(a === b)",
+      "console.log(a === c)"
+    ],
+    "lock": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "shows": [
+      "var x = y",
+      "'…'",
+      "console.log(…)",
+      "x",
+      "x === y"
+    ],
+    "target": [
+      "true",
+      "true"
+    ],
+    "needs": [
+      "'…'"
+    ]
+  },
+  {
+    "codenames": [
+      "string-case-equality"
+    ],
+    "code": [
+      "var a = 'CAT'",
+      "var b = 'cat'",
+      "console.log(a === b)"
+    ],
+    "lock": [
+      0,
+      2,
+      3
+    ],
+    "shows": [
+      "var x = y",
+      "'…'",
+      "console.log(…)",
+      "x",
+      "x === y"
+    ],
+    "target": [
+      "true"
+    ],
+    "needs": [
+      "'…'"
+    ]
+  },
+  {
+    "codenames": [
+      "catdog-equals"
+    ],
+    "code": [
+      "var a = 'cat'",
+      "var b = 'dog'",
+      "var c = ''",
+      "console.log(a + b === c)"
+    ],
+    "lock": [
+      0,
+      1,
+      3
+    ],
+    "shows": [
+      "var x = y",
+      "'…'",
+      "console.log(…)",
+      "x",
+      "x === y",
+      "'…' + '…'"
+    ],
+    "target": [
+      "true"
+    ],
+    "needs": [
+      "'…'"
+    ]
+  },
+  {
+    "codenames": [
+      "use-string-equals"
+    ],
+    "code": [
+      "var a = 'cat'",
+      "var b = 'cat'",
+      "",
+      "console.log(c)"
+    ],
+    "lock": [
+      0,
+      1,
+      3
+    ],
+    "shows": [
+      "var x = y",
+      "'…'",
+      "console.log(…)",
+      "x"
+    ],
+    "target": [
+      "true"
+    ],
+    "needs": [
+      "var x = y",
+      "x === y"
+    ]
+  },
+  {
+    "codenames": [
+      "first-inequality"
+    ],
+    "code": [
+      "var a = 'cat'",
+      "var b = 'kitty'",
+      "var c = 'cat'",
+      "console.log(a !== b)",
+      "console.log(a !== c)"
+    ],
+    "lock": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "shows": [
+      "var x = y",
+      "'…'",
+      "console.log(…)",
+      "x",
+      "x === y"
+    ],
+    "target": [
+      "true",
+      "true"
+    ],
+    "needs": [
+      "'…'"
+    ]
+  },
+  {
+    "codenames": [
+      "use-string-not-equals"
+    ],
+    "code": [
+      "var a = 'cat'",
+      "var b = 'dog'",
+      "",
+      "console.log(c)"
+    ],
+    "lock": [
+      0,
+      1,
+      3
+    ],
+    "shows": [
+      "var x = y",
+      "'…'",
+      "console.log(…)",
+      "x"
+    ],
+    "target": [
+      "true"
+    ],
+    "needs": [
+      "var x = y",
+      "x !== y"
+    ]
+  }
+]
