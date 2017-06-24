@@ -68,8 +68,7 @@ function runCode () {
   } else {
     var difference = diff.diffLines(
       currentChallenge.target.join('\n'),
-      consoleBuffer.join('\n'),
-      {newlineIsToken: true}
+      consoleBuffer.join('\n')
     )
     showDifference(difference)
     var success = !difference.some(function (item) {
@@ -170,11 +169,12 @@ function showChallenge (optionalChallengeNumber) {
       })
     }
     showDifference(
-      diff.diffLines(
-        currentChallenge.target.join('\n'),
-        '',
-        {newlineIsToken: true}
-      )
+      currentChallenge.target.map(function (target) {
+        return {
+          value: target,
+          removed: true
+        }
+      })
     )
   } else {
     graduate()
@@ -187,6 +187,7 @@ function showDifference (difference) {
   var lineDifference = difference.reduce(function (lines, item) {
     return lines.concat(
       item.value
+        .trim()
         .split('\n')
         .map(function (line) {
           var object = {
