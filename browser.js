@@ -66,6 +66,8 @@ function runCode () {
   if (exception) {
     showException(exception)
     showTargetOutput()
+    unsuccessfulRuns++
+    showHintsIfStuck()
   } else {
     var difference = diff.diffLines(
       currentChallenge.target.join('\n'),
@@ -81,10 +83,14 @@ function runCode () {
       setTimeout(celebrate, 1000)
     } else {
       unsuccessfulRuns++
-      if (unsuccessfulRuns >= 3) {
-        showHints()
-      }
+      showHintsIfStuck()
     }
+  }
+}
+
+function showHintsIfStuck () {
+  if (unsuccessfulRuns >= 3) {
+    showHints()
   }
 }
 
