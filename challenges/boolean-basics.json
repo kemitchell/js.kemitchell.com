@@ -1,1 +1,355 @@
-[]
+[
+  {
+    "codenames": [
+      "first-conjunction"
+    ],
+    "code": [
+      "var a = true",
+      "var b = true",
+      "var c = false",
+      "console.log(a && b)",
+      "console.log(b && c)"
+    ],
+    "lock": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "shows": [
+      "var x = y",
+      "true",
+      "false",
+      "x && y",
+      "console.log(…)"
+    ],
+    "target": [
+      "true",
+      "true"
+    ],
+    "needs": [
+      "true",
+      "false"
+    ]
+  },
+  {
+    "codenames": [
+      "second-conjunction"
+    ],
+    "code": [
+      "var a = true",
+      "var b = true",
+      "var c = true",
+      "console.log(a && b)",
+      "console.log(b && c)"
+    ],
+    "lock": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "shows": [
+      "var x = y",
+      "true",
+      "false",
+      "x && y",
+      "console.log(…)"
+    ],
+    "target": [
+      "false",
+      "false"
+    ],
+    "needs": [
+      "true",
+      "false"
+    ]
+  },
+  {
+    "codenames": [
+      "trues-for-conjunction"
+    ],
+    "code": [
+      "",
+      "",
+      "console.log(a && b)"
+    ],
+    "lock": [
+      2
+    ],
+    "shows": [
+      "x && y",
+      "console.log(…)"
+    ],
+    "target": [
+      "true"
+    ],
+    "needs": [
+      "true",
+      "false"
+    ]
+  },
+  {
+    "codenames": [
+      "pick-true-conjunctions"
+    ],
+    "code": [
+      "var a = true && true",
+      "var b = true && false",
+      "var c = false && true",
+      "var d = false && false",
+      ""
+    ],
+    "lock": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "shows": [
+      "var x = y",
+      "true",
+      "false",
+      "x && y"
+    ],
+    "target": [
+      "true"
+    ],
+    "needs": [
+      "console.log(…)",
+      "x"
+    ]
+  },
+  {
+    "codenames": [
+      "first-disjunction"
+    ],
+    "code": [
+      "var a = false",
+      "var b = false",
+      "",
+      "console.log(a || b)",
+      "console.log(a || c)"
+    ],
+    "lock": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "shows": [
+      "var x = y",
+      "false",
+      "x && y",
+      "console.log(…)",
+      "x || y"
+    ],
+    "target": [
+      "false",
+      "true"
+    ],
+    "needs": [
+      "true",
+      "false"
+    ]
+  },
+  {
+    "codenames": [
+      "pick-true-disjunctions"
+    ],
+    "code": [
+      "var a = true || true",
+      "var b = true || false",
+      "var c = false || true",
+      "var d = false || false",
+      "",
+      ""
+    ],
+    "lock": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "shows": [
+      "var x = y",
+      "true",
+      "false",
+      "x || y"
+    ],
+    "target": [
+      "true",
+      "true"
+    ],
+    "needs": [
+      "console.log(…)",
+      "x"
+    ]
+  },
+  {
+    "codenames": [
+      "first-negation"
+    ],
+    "code": [
+      "var a = true",
+      "var b = false",
+      "",
+      "console.log(!a)",
+      "console.log(!b)",
+      "console.log(!c)"
+    ],
+    "lock": [
+      0,
+      1,
+      3,
+      4,
+      5
+    ],
+    "shows": [
+      "var x = y",
+      "true",
+      "false",
+      "console.log(…)",
+      "!x"
+    ],
+    "target": [
+      "false",
+      "true",
+      "true"
+    ],
+    "needs": [
+      "x",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "codenames": [
+      "grouped-conjunction"
+    ],
+    "code": [
+      "var a = true",
+      "var b = true",
+      "",
+      "var d = (a && b) && c",
+      "console.log(d)"
+    ],
+    "lock": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "shows": [
+      "var x = y",
+      "true",
+      "x && y",
+      "(x && y)",
+      "console.log(…)",
+      "x"
+    ],
+    "target": [
+      "true"
+    ],
+    "needs": [
+      "var x = y",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "codenames": [
+      "negated-conjunction"
+    ],
+    "code": [
+      "var a = true",
+      "",
+      "var c = !(a && b)",
+      "console.log(c)"
+    ],
+    "lock": [
+      0,
+      2,
+      3
+    ],
+    "shows": [
+      "var x = y",
+      "true",
+      "x && y",
+      "!(x && y)",
+      "console.log(…)",
+      "x"
+    ],
+    "target": [
+      "true"
+    ],
+    "needs": [
+      "var x = y",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "codenames": [
+      "negated-disjunction"
+    ],
+    "code": [
+      "var a = false",
+      "",
+      "var c = !(a || b)",
+      "console.log(c)"
+    ],
+    "lock": [
+      0,
+      2,
+      3
+    ],
+    "shows": [
+      "var x = y",
+      "false",
+      "x || y",
+      "!(x || y)",
+      "console.log(…)",
+      "x"
+    ],
+    "target": [
+      "true"
+    ],
+    "needs": [
+      "var x = y",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "codenames": [
+      "boolean-puzzle"
+    ],
+    "code": [
+      "",
+      "",
+      "",
+      "console.log((!a || !b) && (b && c))"
+    ],
+    "lock": [
+      3
+    ],
+    "shows": [
+      "console.log(…)",
+      "x",
+      "!x",
+      "x || y",
+      "(x || y)",
+      "x && y",
+      "(x && y)"
+    ],
+    "target": [
+      "true"
+    ],
+    "needs": [
+      "var x = y",
+      "true",
+      "false"
+    ]
+  }
+]
