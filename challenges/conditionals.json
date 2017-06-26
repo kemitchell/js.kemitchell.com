@@ -1,1 +1,318 @@
-[]
+[
+  {
+    "codenames": [
+      "first-if"
+    ],
+    "code": [
+      "var x = true",
+      "",
+      "if (x) {",
+      "  console.log('x')",
+      "}",
+      "if (y) {",
+      "  console.log('y')",
+      "}"
+    ],
+    "lock": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "shows": [
+      "var x = y",
+      "true",
+      "if (…) {…}",
+      "console.log(…)",
+      "'x'"
+    ],
+    "target": [
+      "x",
+      "y"
+    ],
+    "needs": [
+      "var x = y",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "codenames": [
+      "first-else"
+    ],
+    "code": [
+      "",
+      "if (x) {",
+      "  console.log('dog')",
+      "} else {",
+      "  console.log('cat')",
+      "}"
+    ],
+    "lock": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "shows": [
+      "if (…) {…}",
+      "console.log(…)",
+      "'x'",
+      "else {…}"
+    ],
+    "target": [
+      "cat"
+    ],
+    "needs": [
+      "var x = y",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "codenames": [
+      "if-negation"
+    ],
+    "code": [
+      "",
+      "if (!x) {",
+      "  console.log('dog')",
+      "} else {",
+      "  console.log('cat')",
+      "}"
+    ],
+    "lock": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "shows": [
+      "if (…) {…}",
+      "!x",
+      "console.log(…)",
+      "'x'",
+      "else {…}"
+    ],
+    "target": [
+      "dog"
+    ],
+    "needs": [
+      "var x = y",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "codenames": [
+      "write-if"
+    ],
+    "code": [
+      "var x = false",
+      "",
+      "  console.log('dog')",
+      "",
+      "console.log('cat')"
+    ],
+    "lock": [
+      0,
+      2,
+      4
+    ],
+    "shows": [
+      "var x = y",
+      "false",
+      "console.log(…)",
+      "'x'"
+    ],
+    "target": [
+      "cat"
+    ],
+    "needs": [
+      "if (…) {…}",
+      "x"
+    ]
+  },
+  {
+    "codenames": [
+      "write-if-else"
+    ],
+    "code": [
+      "var x = true",
+      "",
+      "  console.log('dog')",
+      "",
+      "  console.log('cat')",
+      ""
+    ],
+    "lock": [
+      0,
+      2,
+      4
+    ],
+    "shows": [
+      "var x = y",
+      "true",
+      "console.log(…)",
+      "'x'"
+    ],
+    "target": [
+      "dog"
+    ],
+    "needs": [
+      "if (…) {…}",
+      "x",
+      "else {…}"
+    ]
+  },
+  {
+    "codenames": [
+      "write-if-negation-else"
+    ],
+    "code": [
+      "var x = true",
+      "",
+      "  console.log('dog')",
+      "",
+      "  console.log('cat')",
+      ""
+    ],
+    "lock": [
+      0,
+      2,
+      4
+    ],
+    "shows": [
+      "var x = y",
+      "true",
+      "console.log(…)",
+      "'x'"
+    ],
+    "target": [
+      "cat"
+    ],
+    "needs": [
+      "if (…) {…}",
+      "x",
+      "else {…}"
+    ]
+  },
+  {
+    "codenames": [
+      "if-string-equals"
+    ],
+    "code": [
+      "",
+      "if (x === 'dog') {",
+      "  console.log('dog')",
+      "} else {",
+      "  console.log('cat')",
+      "}"
+    ],
+    "lock": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "shows": [
+      "if (…) {…}",
+      "x === y",
+      "console.log(…)",
+      "'x'",
+      "else {…}"
+    ],
+    "target": [
+      "dog"
+    ],
+    "needs": [
+      "var x = y",
+      "'…'"
+    ]
+  },
+  {
+    "codenames": [
+      "if-string-equals-else-if"
+    ],
+    "code": [
+      "",
+      "if (x === 'dog') {",
+      "  console.log('dog')",
+      "} else if (x === 'cat') {",
+      "  console.log('cat')",
+      "} else {",
+      "  console.log('fish')",
+      "}"
+    ],
+    "lock": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "shows": [
+      "if (…) {…}",
+      "x === y",
+      "console.log(…)",
+      "'x'",
+      "else if (…) {…}",
+      "else {…}"
+    ],
+    "target": [
+      "cat"
+    ],
+    "needs": [
+      "var x = y",
+      "'…'"
+    ]
+  },
+  {
+    "codenames": [
+      "if-string-equals-else-if-else"
+    ],
+    "code": [
+      "var x = 'cat'",
+      "if (x === 'dog') {",
+      "  console.log('dog')",
+      "} else if (x === 'cat') {",
+      "  console.log('cat')",
+      "} else {",
+      "  console.log('fish')",
+      "}"
+    ],
+    "lock": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "shows": [
+      "var x = y",
+      "if (…) {…}",
+      "x === y",
+      "console.log(…)",
+      "'x'",
+      "else if (…) {…}",
+      "else {…}"
+    ],
+    "target": [
+      "fish"
+    ],
+    "needs": [
+      "var x = y",
+      "'…'"
+    ]
+  }
+]
