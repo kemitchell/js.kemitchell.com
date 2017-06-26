@@ -66,6 +66,7 @@ function runCode () {
   if (exception) {
     showException(exception)
     showTargetOutput()
+    consoleBuffer = []
     unsuccessfulRuns++
     showHintsIfStuck()
   } else {
