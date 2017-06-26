@@ -1,0 +1,153 @@
+String
+  'x'
+  string[0]
+  string[number]
+  string[string.length - 1]
+  string + string
+  string[number] = 'x'
+
+Number
+  1
+  number + number
+  number - number
+  number * number
+  number / number
+  number > number
+  (number - number) * number
+  parseInt(string)
+
+Boolean
+  true
+  false
+  !boolean
+  boolean && boolean
+  boolean || boolean
+  !(boolean && boolean)
+  string === string
+  number === number
+  boolean === boolean
+  number > number
+
+Control Flow
+  if (...) {...}
+  else {...}
+  else if (...) {...}
+  while (...) {...}
+  Array Iteration
+    var n = 0
+    while (n < array.length) {
+      array[n]
+      n = n + 1
+    }
+  Object Iteration
+    var keys = Object.keys(object)
+    var n = 0
+    while (n < keys.length) {
+      object[keys[n]]
+      n = n + 1
+    }
+
+Array
+  []
+  [element]
+  [element, element]
+  array[number]
+  array[number] = element
+  array.length
+  array.push(element)
+  var x = array.pop()
+  var x = []; var y = []; !(x === y)
+  var x = []; var y = x; x === y
+  var x = []; x[0] = 1; var y = x; x === y
+  array[number] === undefined
+
+Object
+  {}
+  {'key': 'value'}
+  {'key': 'value', 'key': 'value'}
+  object[key]
+  object[key] = value
+  Object.keys(object)
+  var x = {}; var y = {}; !(x === y)
+  var x = {}; var y = x; x === y
+  var x = {}; x[a] = b; var y = x; x === y
+  object[key] = undefined
+
+Variables
+  var x = y
+  x = y
+  x = x + y
+
+Functions
+  Nullary Procedure
+    var f = function () {
+      ...
+    }
+    f()
+  Nullary Function
+    var f = function () {
+      return ...
+    }
+    var x = f()
+  Unary Procedure
+    var f = function(x) {
+      ...
+    }
+    f(x)
+  Unary Function
+    var f = function(x) {
+      return ...
+    }
+    var x = f(y)
+  n-ary Procedure
+    var f = function(x, y) {
+      ...
+    }
+    f(x, y)
+  n-ary Function
+    var f = function(x, y) {
+      return ...
+    }
+    var a = f(b, c)
+  Closure
+    var x = y
+    var f = function () {
+      ...
+    }
+    f()
+  Closure with Mutation
+    var x = y
+    var f = function () {
+      x = ...
+    }
+    f()
+    f()
+  Functions within Functions
+    var f = function () {
+      var g = function () {
+      }
+      g()
+    }
+    f()
+  Functions taking Function Arguments
+    var f = function (g) {
+      g()
+    }
+    var h = function () {
+      ...
+    }
+    f(h)
+  Functions taking Function Literals
+    var f = function (g) {
+      g()
+    }
+    f(function () {
+      ...
+    })
+  Functions returning Functions
+    var f = function () {
+      var g = function () {
+        ...
+      }
+      return g
+    }
