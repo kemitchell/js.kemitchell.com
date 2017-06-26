@@ -1,46 +1,100 @@
 String
-  'x'
-  string[0]
-  string[number]
-  string[string.length - 1]
-  string + string
-  string[number] = 'x'
+
+  String Literal
+    'x'
+
+  First String Character
+    string[0]
+
+  String Length
+    string.length
+
+  String Character Access
+    string[number]
+
+  String Last Character Access
+    string[string.length - 1]
+
+  String Character Assignment
+    string[number] = 'x'
+
+  String Concatenation
+    string + string
 
 Number
-  1
-  number + number
-  number - number
-  number * number
-  (number - number) * number
-  number = number + number
-  number > number
-  number / number
-    Note: Can throw exceptions
-  parseInt(string)
+  Number Literal
+    1
+
+  Addition
+    number + number
+
+  Subtraction
+    number - number
+
+  Multiplication
+    number * number
+
+  Grouped Arithmetic
+    (number - number) * number
+
+  Greater-Than
+    number > number
+
+  Division
+    number / number
+      Note: Can throw exceptions
+
+  parseInt
+    parseInt(string)
 
 Boolean
-  true
-  false
-  !boolean
-  boolean && boolean
-  boolean || boolean
-  !(boolean && boolean)
-  string === string
-  number === number
-  boolean === boolean
-  number > number
+
+  Boolean Literals
+    true
+    false
+
+  Negation
+    !boolean
+
+  Conjunction
+    boolean && boolean
+
+  Disjunction
+    boolean || boolean
+
+  Grouped Negation
+    !(boolean && boolean)
+
+  String Equality
+    string === string
+
+  Number Equality
+    number === number
+
+  Boolean Equality
+    boolean === boolean
 
 Control Flow
-  if (...) {...}
-  else {...}
-  else if (...) {...}
-  while (...) {...}
+
+  If
+    if (...) {...}
+
+  Else
+    else {...}
+
+  Else If
+    else if (...) {...}
+
+  While
+    while (...) {...}
+
   Array Iteration
     var n = 0
     while (n < array.length) {
       array[n]
       n = n + 1
     }
+
   Object Iteration
     var keys = Object.keys(object)
     var n = 0
@@ -50,73 +104,114 @@ Control Flow
     }
 
 Array
-  []
-  [element]
-  [element, element]
-  array[number]
-  array[number] = element
-  array.length
-  array.push(element)
-  var x = array.pop()
-  var x = []; var y = []; !(x === y)
-  var x = []; var y = x; x === y
-  var x = []; x[0] = 1; var y = x; x === y
-  array[number] === undefined
+
+  Array Literal
+    []
+    [element]
+    [element, element]
+
+  Array Element Access
+    array[number]
+    array[number] === undefined
+
+  Array Element Assignment
+    array[number] = element
+
+  Array Length
+    array.length
+
+  Push
+    array.push(element)
+
+  Pop
+    var x = array.pop()
+
+  Array Indentity
+    var x = []; var y = []; !(x === y)
+    var x = []; var y = x; x === y
+    var x = []; x[0] = 1; var y = x; x === y
 
 Object
-  {}
-  {'key': 'value'}
-  {'key': 'value', 'key': 'value'}
-  object[key]
-  object[key] = value
-  Object.keys(object)
-  var x = {}; var y = {}; !(x === y)
-  var x = {}; var y = x; x === y
-  var x = {}; x[a] = b; var y = x; x === y
-  object[key] = undefined
+
+  Object Literal
+    {}
+    {'key': 'value'}
+    {'key': 'value', 'key': 'value'}
+
+  Object Property Access
+    object[key]
+    object[key] === undefined
+
+  Object Property Assignment
+    object[key] = value
+
+  Keys
+    Object.keys(object)
+
+  Object Identity
+    var x = {}; var y = {}; !(x === y)
+    var x = {}; var y = x; x === y
+    var x = {}; x[a] = b; var y = x; x === y
 
 Variables
-  var x = y
-  x = y
-  x = x + y
+
+  Declaration
+    var x = y
+
+  Assignment
+    x = y
+
+  String Variable Mutation
+    string = string + string
+
+  Number Variable Mutation
+    number = number + number
 
 Functions
+
   Nullary Procedure
     var f = function () {
       ...
     }
     f()
+
   Nullary Function
     var f = function () {
       return ...
     }
     var x = f()
+
   Unary Procedure
     var f = function(x) {
       ...
     }
     f(x)
+
   Unary Function
     var f = function(x) {
       return ...
     }
     var x = f(y)
+
   n-ary Procedure
     var f = function(x, y) {
       ...
     }
     f(x, y)
+
   n-ary Function
     var f = function(x, y) {
       return ...
     }
     var a = f(b, c)
+
   Closure
     var x = y
     var f = function () {
       ...
     }
     f()
+
   Closure with Mutation
     var x = y
     var f = function () {
@@ -124,6 +219,7 @@ Functions
     }
     f()
     f()
+
   Functions within Functions
     var f = function () {
       var g = function () {
@@ -131,6 +227,7 @@ Functions
       g()
     }
     f()
+
   Functions taking Function Arguments
     var f = function (g) {
       g()
@@ -139,6 +236,7 @@ Functions
       ...
     }
     f(h)
+
   Functions taking Function Literals
     var f = function (g) {
       g()
@@ -146,6 +244,7 @@ Functions
     f(function () {
       ...
     })
+
   Functions returning Functions
     var f = function () {
       var g = function () {
