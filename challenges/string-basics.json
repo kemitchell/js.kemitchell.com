@@ -66,7 +66,7 @@
       "var x = y",
       "'…'",
       "console.log(…)",
-      "string.length"
+      "x.length"
     ],
     "target": [
       "4"
@@ -90,7 +90,7 @@
       "'…'",
       "console.log(…)",
       "x",
-      "string.length"
+      "x.length"
     ],
     "target": [
       "4"
@@ -117,7 +117,7 @@
     "needs": [
       "console.log(…)",
       "x",
-      "string.length"
+      "x.length"
     ]
   }
 ]

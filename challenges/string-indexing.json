@@ -1,1 +1,208 @@
-[]
+[
+  {
+    "codenames": [
+      "first-char"
+    ],
+    "code": [
+      "var x = 'fish'",
+      "var y = 'dog'",
+      "console.log(x[0])",
+      "console.log(y[0])"
+    ],
+    "lock": [
+      0,
+      2,
+      3
+    ],
+    "shows": [
+      "var x = y",
+      "'x'",
+      "console.log(…)",
+      "x",
+      "x[0]"
+    ],
+    "target": [
+      "f",
+      "c"
+    ],
+    "needs": [
+      "var x = y",
+      "'x'"
+    ]
+  },
+  {
+    "codenames": [
+      "nth-char"
+    ],
+    "code": [
+      "var x = 'fish'",
+      "var y = 'dog'",
+      "var i = 1",
+      "console.log(x[i])",
+      "console.log(y[i])"
+    ],
+    "lock": [
+      0,
+      2,
+      3
+    ],
+    "shows": [
+      "var x = y",
+      "'x'",
+      "console.log(…)",
+      "x",
+      "x[i]"
+    ],
+    "target": [
+      "i",
+      "a"
+    ],
+    "needs": [
+      "var x = y",
+      "'x'"
+    ]
+  },
+  {
+    "codenames": [
+      "last-char"
+    ],
+    "code": [
+      "var x = 'fish'",
+      "var i = 0",
+      "console.log(x.length)",
+      "console.log(x[i])"
+    ],
+    "lock": [
+      0,
+      2,
+      3
+    ],
+    "shows": [
+      "var x = y",
+      "'x'",
+      "1",
+      "x.length",
+      "console.log(…)",
+      "x",
+      "x[i]"
+    ],
+    "target": [
+      "4",
+      "h"
+    ],
+    "needs": [
+      "var x = y",
+      "'x'",
+      "x - y",
+      "1"
+    ]
+  },
+  {
+    "codenames": [
+      "past-last-char"
+    ],
+    "code": [
+      "var x = 'fish'",
+      "var i = 0",
+      "console.log(x[4] === undefined)",
+      "console.log(x[i])"
+    ],
+    "lock": [
+      0,
+      2,
+      3
+    ],
+    "shows": [
+      "var x = y",
+      "'x'",
+      "1",
+      "x.length",
+      "console.log(…)",
+      "x",
+      "x === y",
+      "undefined",
+      "x[i]"
+    ],
+    "target": [
+      "true",
+      "s"
+    ],
+    "needs": [
+      "var x = y",
+      "'x'",
+      "x - y",
+      "1"
+    ]
+  },
+  {
+    "codenames": [
+      "last-char-length"
+    ],
+    "code": [
+      "var x = 'fish'",
+      "var i = 2",
+      "console.log(x[x.length - i])"
+    ],
+    "lock": [
+      0,
+      2
+    ],
+    "shows": [
+      "var x = y",
+      "'x'",
+      "1",
+      "x.length",
+      "console.log(…)",
+      "x",
+      "x[i]",
+      "x[x.length - y]"
+    ],
+    "target": [
+      "h"
+    ],
+    "needs": [
+      "var x = y",
+      "'x'",
+      "x - y",
+      "1"
+    ]
+  },
+  {
+    "codenames": [
+      "alphabet"
+    ],
+    "code": [
+      "var x = 'abcdefghijklmnopqrstuvwxyz'",
+      "var i = 0",
+      "var j = 0",
+      "var k = 0",
+      "console.log(x[i])",
+      "console.log(x[j])",
+      "console.log(x[k])"
+    ],
+    "lock": [
+      0,
+      4,
+      5,
+      6
+    ],
+    "shows": [
+      "var x = y",
+      "'x'",
+      "console.log(…)",
+      "x",
+      "x[i]"
+    ],
+    "target": [
+      "a",
+      "b",
+      "z"
+    ],
+    "needs": [
+      "var x = y",
+      "'x'",
+      "x - y",
+      "1"
+    ]
+  }
+]
