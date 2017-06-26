@@ -11,9 +11,11 @@ Number
   number + number
   number - number
   number * number
-  number / number
-  number > number
   (number - number) * number
+  number = number + number
+  number > number
+  number / number
+    Note: Can throw exceptions
   parseInt(string)
 
 Boolean

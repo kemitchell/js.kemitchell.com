@@ -1,1 +1,60 @@
-[]
+[
+  {
+    "codenames": [
+      "number-equals"
+    ],
+    "code": [
+      "var x = 42",
+      "",
+      "console.log(x === 42)",
+      "console.log(x === y)"
+    ],
+    "lock": [
+      0,
+      2,
+      3
+    ],
+    "shows": [
+      "var x = y",
+      "1",
+      "console.log(…)",
+      "x",
+      "1 === 1"
+    ],
+    "target": [
+      "true",
+      "true"
+    ],
+    "needs": [
+      "var x = y",
+      "1"
+    ]
+  },
+  {
+    "codenames": [
+      "greater-than"
+    ],
+    "code": [
+      "",
+      "console.log(13 > x)",
+      "console.log(x > 11)"
+    ],
+    "lock": [
+      1,
+      2
+    ],
+    "shows": [
+      "1",
+      "console.log(…)",
+      "x > y"
+    ],
+    "target": [
+      "true",
+      "true"
+    ],
+    "needs": [
+      "var x = y",
+      "1"
+    ]
+  }
+]
