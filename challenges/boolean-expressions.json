@@ -1,1 +1,131 @@
-[]
+[
+  {
+    "codenames": [
+      "grouped-conjunction"
+    ],
+    "code": [
+      "var a = true",
+      "var b = true",
+      "",
+      "var d = (a && b) && c",
+      "console.log(d)"
+    ],
+    "lock": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "shows": [
+      "var x = y",
+      "true",
+      "x && y",
+      "(x && y)",
+      "console.log(…)",
+      "x"
+    ],
+    "target": [
+      "true"
+    ],
+    "needs": [
+      "var x = y",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "codenames": [
+      "negated-conjunction"
+    ],
+    "code": [
+      "var a = true",
+      "",
+      "var c = !(a && b)",
+      "console.log(c)"
+    ],
+    "lock": [
+      0,
+      2,
+      3
+    ],
+    "shows": [
+      "var x = y",
+      "true",
+      "x && y",
+      "!(x && y)",
+      "console.log(…)",
+      "x"
+    ],
+    "target": [
+      "true"
+    ],
+    "needs": [
+      "var x = y",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "codenames": [
+      "negated-disjunction"
+    ],
+    "code": [
+      "var a = false",
+      "",
+      "var c = !(a || b)",
+      "console.log(c)"
+    ],
+    "lock": [
+      0,
+      2,
+      3
+    ],
+    "shows": [
+      "var x = y",
+      "false",
+      "x || y",
+      "!(x || y)",
+      "console.log(…)",
+      "x"
+    ],
+    "target": [
+      "true"
+    ],
+    "needs": [
+      "var x = y",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "codenames": [
+      "boolean-puzzle"
+    ],
+    "code": [
+      "",
+      "",
+      "",
+      "console.log((!a || !b) && (b && c))"
+    ],
+    "lock": [
+      3
+    ],
+    "shows": [
+      "console.log(…)",
+      "x",
+      "!x",
+      "x || y",
+      "(x || y)",
+      "x && y",
+      "(x && y)"
+    ],
+    "target": [
+      "true"
+    ],
+    "needs": [
+      "var x = y",
+      "true",
+      "false"
+    ]
+  }
+]
